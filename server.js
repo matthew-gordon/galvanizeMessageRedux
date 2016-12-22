@@ -5,6 +5,8 @@ const app = express();
 
 const messages = require('./routes/messages');
 
+app.use(express.static('public'));
+
 app.use('/messages',messages);
 
 const port = process.env.PORT || 3000;

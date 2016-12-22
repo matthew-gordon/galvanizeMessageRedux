@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Galvanize Message</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <div class="container flex">
+
+      <div class="display">
+
+        <table>
+
+          <thead>
+            <th>id</th>
+            <th>name</th>
+            <th>message</th>
+          </thead>
+
+          <tbody id="display">
+            <!-- dynamic content -->
+          </tbody>
+
+        </table>
+
+      </div><!-- display -->
+
+      <div class="form">
+        <div class="inputs">
+
+          <!-- GET all messages -->
+          <label for="">Get All Messages</label><br/>
+          <button id="getMessages">Get Messages</button><br/>
+
+          <!-- GET one message -->
+          <label for="">Get Single Message by id</label><br/>
+          <input type="text" placeholder="id" id="inputId"><br/>
+          <button id="getIdMessage">Get Message</button><br/>
+
+          <!-- POST new message -->
+          <label for="">Create New Message</label><br/>
+          <input type="text" id="createInputName" placeholder="New Name"><br/>
+          <textarea id="createInputMessage" placeholder="New Message"></textarea><br/>
+          <button id="createMessage">Create Message</button><br/>
+
+          <!-- PATCH update single message -->
+          <label for="">Update single Message by id</label><br/>
+          <input type="text" id="updateInputId" placeholder="Id"><br/>
+          <input type="text" id="updateInputName" placeholder="New Name"><br/>
+          <textarea id="updateInputMessage" placeholder="New Message"></textarea><br/>
+          <button id="updateMessage">Update Message</button><br/>
+
+          <!-- DELETE single message -->
+          <label for="">Delete single Message by id</label><br/>
+          <input type="text" id="deleteInputId" placeholder="Id"><br/>
+          <button id="deleteMessage">Delete Message</button><br/>
+
+        </div><!-- inputs -->
+      </div><!-- form -->
+
+    </div><!-- container -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="default.js"></script>
+  </body>
+</html>

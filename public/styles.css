@@ -1,0 +1,11 @@
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+table, th, td {
+  border: 1px solid #000;
+  width: 700px;
+}
